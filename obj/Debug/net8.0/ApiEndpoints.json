@@ -1,0 +1,391 @@
+[
+  {
+    "ContainingType": "MicrosservicoAluguel.Controllers.AluguelController",
+    "Method": "Aluguel",
+    "RelativePath": "Aluguel",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "novoAluguel",
+        "Type": "MicrosservicoAluguel.Models.DTOs.NovoAluguel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MicrosservicoAluguel.Models.DTOs.Aluguel",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MicrosservicoAluguel.Controllers.CartaoDeCreditoController",
+    "Method": "Get",
+    "RelativePath": "cartaoDeCredito/{idCiclista}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idCiclista",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MicrosservicoAluguel.Models.CartaoDeCredito",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MicrosservicoAluguel.Controllers.CartaoDeCreditoController",
+    "Method": "Put",
+    "RelativePath": "cartaoDeCredito/{idCiclista}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idCiclista",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "cartaoAtualizado",
+        "Type": "MicrosservicoAluguel.Models.DTOs.NovoCartaoDeCreditoDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MicrosservicoAluguel.Models.CartaoDeCredito",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MicrosservicoAluguel.Controllers.CiclistaController",
+    "Method": "Post",
+    "RelativePath": "Ciclista",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MicrosservicoAluguel.Models.DTOs.CiclistaCadastroDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MicrosservicoAluguel.Models.CiclistaResponseDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MicrosservicoAluguel.Controllers.CiclistaController",
+    "Method": "Get",
+    "RelativePath": "Ciclista/{idCiclista}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idCiclista",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MicrosservicoAluguel.Models.CiclistaResponseDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MicrosservicoAluguel.Controllers.CiclistaController",
+    "Method": "Put",
+    "RelativePath": "Ciclista/{idCiclista}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idCiclista",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "ciclistaAtualizado",
+        "Type": "MicrosservicoAluguel.Models.DTOs.CiclistaDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MicrosservicoAluguel.Models.CiclistaResponseDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MicrosservicoAluguel.Controllers.CiclistaController",
+    "Method": "Ativar",
+    "RelativePath": "Ciclista/{idCiclista}/ativar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idCiclista",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MicrosservicoAluguel.Models.CiclistaResponseDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MicrosservicoAluguel.Controllers.CiclistaController",
+    "Method": "permiteAluguel",
+    "RelativePath": "Ciclista/{idCiclista}/permiteAluguel",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idCiclista",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MicrosservicoAluguel.Controllers.CiclistaController",
+    "Method": "ExisteEmail",
+    "RelativePath": "Ciclista/existeEmail/{email}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MicrosservicoAluguel.Controllers.AluguelController",
+    "Method": "Devolucao",
+    "RelativePath": "devolucao",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "novoDevolucao",
+        "Type": "MicrosservicoAluguel.Models.DTOs.NovoDevolucao",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MicrosservicoAluguel.Models.DTOs.Devolucao",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MicrosservicoAluguel.Controllers.FuncionarioController",
+    "Method": "Get",
+    "RelativePath": "Funcionario",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[MicrosservicoAluguel.Models.Funcionario, MicrosservicoAluguel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MicrosservicoAluguel.Controllers.FuncionarioController",
+    "Method": "Post",
+    "RelativePath": "Funcionario",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "novoFuncionario",
+        "Type": "MicrosservicoAluguel.Models.DTOs.NovoFuncionario",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MicrosservicoAluguel.Models.Funcionario",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MicrosservicoAluguel.Controllers.FuncionarioController",
+    "Method": "Get",
+    "RelativePath": "Funcionario/{idFuncionario}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idFuncionario",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MicrosservicoAluguel.Models.Funcionario",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MicrosservicoAluguel.Controllers.FuncionarioController",
+    "Method": "Put",
+    "RelativePath": "Funcionario/{idFuncionario}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idFuncionario",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "novoFuncionario",
+        "Type": "MicrosservicoAluguel.Models.DTOs.NovoFuncionario",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MicrosservicoAluguel.Models.Funcionario",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MicrosservicoAluguel.Controllers.FuncionarioController",
+    "Method": "Delete",
+    "RelativePath": "Funcionario/{idFuncionario}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idFuncionario",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MicrosservicoAluguel.Models.Funcionario",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]
